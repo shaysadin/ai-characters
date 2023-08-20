@@ -2,10 +2,17 @@
   "name": "ai-character",
   "version": "0.1.0",
   "private": true,
+
+  "engines": {
+    "node": "20.x.x"
+  },
+
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 8080",
+    "gcp-build": "npm run build",
+    "deploy": "gcloud config set project ai-character-396518 && gcloud app deploy app.yaml --version=0-1-0",
     "lint": "next lint",
     "postinstall": "prisma generate"
   },
@@ -22,7 +29,7 @@
     "@radix-ui/react-separator": "^1.0.3",
     "@radix-ui/react-slot": "^1.0.2",
     "@radix-ui/react-toast": "^1.1.4",
-    "@types/node": "20.5.0",
+    "@types/node": "20.x.x",
     "@types/react": "18.2.20",
     "@types/react-dom": "18.2.7",
     "@upstash/ratelimit": "^0.4.3",

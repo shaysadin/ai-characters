@@ -15,6 +15,7 @@ interface CharacterProps {
 
 
 export const Characters = ({ data }: CharacterProps) => {
+
     if(data.length === 0) {
         return (
             <div className="pt-10 flex flex-col items-center justify-center space-y-3">
