@@ -2,11 +2,9 @@
   "name": "ai-character",
   "version": "0.1.0",
   "private": true,
-
   "engines": {
     "node": "20.x.x"
   },
-
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -39,6 +37,7 @@
     "axios": "^1.4.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
+    "dotenv": "^16.3.1",
     "eslint": "8.47.0",
     "eslint-config-next": "13.4.16",
     "langchain": "^0.0.130",
